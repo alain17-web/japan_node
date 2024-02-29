@@ -2,18 +2,25 @@
     <h1 class="destinationsTitle">Our destinations</h1>
     <div class="destContainer">
         <% destinationsData.forEach(destination=> { %>
-            <div class="destCard">
-                <img src="" alt="">
-                <div class="cardContainer">
+            
+                <div class="destCard">
+                    <%= destination.id %>
+                    <img src="<%= destination.image %>" alt="">
 
-                    <h4>
-                        <%= destination.location %>
-                    </h4>
-                    <p>
-                        <%= destination.description %>
-                    </p>
+                    <div class="cardContainer">
+
+                        <h4>
+                            <%= destination.location %>
+                        </h4>
+                        <p>
+                            <%= destination.description %>
+                        </p>
+                        <a href="/singleDestination?id=<%= destination.id %>">
+                            <%= destination.name %> - <%= destination.id %>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            
             <% }) %>
 
     </div>

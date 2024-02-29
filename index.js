@@ -3,6 +3,7 @@ const url = require('url')
 const ejs = require('ejs')
 const path = require('path')
 const fs = require('fs')
+const queryString = require('querystring')
 
 
 
@@ -28,6 +29,8 @@ const server = http.createServer((req, res) => {
         return
     }
 
+    let jsonFilePath
+
     switch (pathname) {
         case '/':
             ejs.renderFile('views/home.ejs', {}, {}, (err, str) => {
@@ -40,7 +43,7 @@ const server = http.createServer((req, res) => {
 
         case '/destinations':
 
-            const jsonFilePath = path.join(__dirname, 'japon.json')
+            jsonFilePath = path.join(__dirname, 'japon.json')
 
             fs.readFile(jsonFilePath, (err, data) => {
                 if (err) {
@@ -59,14 +62,28 @@ const server = http.createServer((req, res) => {
             })
             break;
 
-        case '/single':
-            ejs.renderFile('views/singleDestination.ejs', {}, {}, (err, str) => {
-                if (err) {
+        case '/singleDestination':
+            const destinationId = parseInt(url.parse(req.url,true).query.id)
+            jsonFilePath = path.join(__dirname, 'japon.json')
+
+            fs.readFile(jsonFilePath, (err, data) => {
+                if(err){
                     console.log(err)
                 }
-                res.end(str)
+
+                const destinationsDataSingle = JSON.parse(data)
+                const singleDestinationData = destinationsDataSingle.find(destination => destination.id === destinationId)
+
+                ejs.renderFile('views/singleDestination.ejs', { singleDestinationData: singleDestinationData }, {}, {}, (err, str) => {
+                    if (err) {
+                        console.log(err)
+                    }
+                    res.end(str)
+                })
             })
+            
             break;
+
 
         case '/contacts':
             ejs.renderFile('views/contact.ejs', {}, {}, (err, str) => {
