@@ -1,0 +1,112 @@
+ [
+    {
+        "id": 1,
+        "name": "Temple de Kinkaku-ji",
+        "location": "Kyoto",
+        "description": "Le Kinkaku-ji est un temple bouddhiste Zen situé à Kyoto. Il est célèbre pour son pavillon doré.",
+        "shortDescription": "Temple bouddhiste doré à Kyoto.",
+        "image": "kinkaku-ji.jpg",
+        "thumbnail": "kinkaku-ji.jpg",
+        "duration": "2 heures",
+        "price": 3.2
+    },
+    {
+        "id": 2,
+        "name": "Mont Fuji",
+        "location": "Préfecture de Shizuoka",
+        "description": "Le mont Fuji est la plus haute montagne du Japon et est connu pour sa symétrie parfaite.",
+        "shortDescription": "Plus haute montagne du Japon.",
+        "image": "fuji.webp",
+        "thumbnail": "fuji.webp",
+        "duration": "3 jours pour l'escalade",
+        "price": 0
+    },
+    {
+        "id": 3,
+        "name": "Temple de Senso-ji",
+        "location": "Tokyo",
+        "description": "Le Senso-ji est un ancien temple bouddhiste situé à Asakusa, Tokyo. C'est l'un des sites les plus colorés et populaires de Tokyo.",
+        "shortDescription": "Temple bouddhiste coloré à Tokyo.",
+        "image": "senjo.jpg",
+        "thumbnail": "senjo.jpg",
+        "duration": "1 heure",
+        "price": 0
+    },
+    {
+        "id": 4,
+        "name": "Château de Himeji",
+        "location": "Himeji",
+        "description": "Le château de Himeji est considéré comme le plus beau château survivant de l'époque féodale du Japon. Il est surnommé le 'Héron Blanc'.",
+        "shortDescription": "Magnifique château féodal à Himeji.",
+        "image": "himeji.webp",
+        "thumbnail": "himeji.webp",
+        "duration": "3 heures",
+        "price": 8
+    },
+    {
+        "id": 5,
+        "name": "Parc de Nara",
+        "location": "Nara",
+        "description": "Le parc de Nara est célèbre pour ses nombreux cerfs sika en liberté. Il est possible de nourrir les cerfs. Il abrite également plusieurs temples importants.",
+        "shortDescription": "Parc avec des cerfs en liberté à Nara.",
+        "image": "nara.jpg",
+        "thumbnail": "nara.jpg",
+        "duration": "Demi-journée",
+        "price": 0
+    },
+    {
+        "id": 7,
+        "name": "Shibuya Crossing",
+        "location": "Tokyo",
+        "description": "Shibuya Crossing est l'un des carrefours les plus fréquentés du monde. C'est un symbole de Tokyo et du Japon moderne.",
+        "shortDescription": "Carrefour animé à Tokyo.",
+        "image": "Shibuya-Crossing.jpg",
+        "thumbnail": "Shibuya-Crossing.jpg",
+        "duration": "30 minutes",
+        "price": 0
+    },
+    {
+        "id": 9,
+        "name": "Jardin Kenrokuen",
+        "location": "Kanazawa",
+        "description": "Kenrokuen est l'un des trois grands jardins du Japon. Il est célèbre pour sa beauté en toutes saisons.",
+        "shortDescription": "Beau jardin à Kanazawa.",
+        "image": "kenrokuen.jpg",
+        "thumbnail": "kenrokuen.jpg",
+        "duration": "1-2 heures",
+        "price": 2.48
+    },
+    {
+        "id": 10,
+        "name": "Musée d'art Adachi",
+        "location": "Shimane",
+        "description": "Le musée d'art Adachi est célèbre pour sa collection d'art moderne japonais et ses magnifiques jardins.",
+        "shortDescription": "Musée d'art avec de beaux jardins à Shimane.",
+        "image": "adachi.webp",
+        "thumbnail": "adachi.webp",
+        "duration": "2-3 heures",
+        "price": 18.40
+    },
+    {
+        "id": 11,
+        "name": "Sanctuaire de Itsukushima",
+        "location": "Hiroshima",
+        "description": "Le sanctuaire de Itsukushima est célèbre pour son torii flottant. Il est situé sur l'île de Miyajima.",
+        "shortDescription": "Sanctuaire avec un torii flottant à Hiroshima.",
+        "image": "Itsukushima.jpg",
+        "thumbnail": "Itsukushima.jpg",
+        "duration": "2 heures",
+        "price": 2.40
+    },
+    {
+        "id": 12,
+        "name": "Village historique de Shirakawa-go",
+        "location": "Gifu",
+        "description": "Shirakawa-go est célèbre pour ses maisons traditionnelles gassho-zukuri. C'est un site du patrimoine mondial de l'UNESCO.",
+        "shortDescription": "Village traditionnel à Gifu.",
+        "image": "shirakawa.webp",
+        "thumbnail": "shirakawa.webp",
+        "duration": "Demi-journée",
+        "price": null
+    }
+]

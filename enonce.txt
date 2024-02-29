@@ -1,0 +1,41 @@
+Énoncé exercice : 
+
+
+
+Création d'un site de destinations de voyage
+
+
+
+- Page d'acceuil avec 
+
+- Titre
+
+- Menu de navigation (Listing des destinations, contacts, login / register)
+
+- La page contacts est accessible mais le formulaire ne doit pas fonctionner
+
+- Les pages login / register ne fonctionnent pas (non-accessible)
+
+
+
+- Page de listing des destinations 
+
+- Listing avec du grid / flex
+
+- Chaque élément de la liste à son thumbnail de visible, ainsi que son nom et sa durée.
+
+- Au clic sur l'image on ouvre la page de détails de cette destination
+
+
+
+- Page de détails 
+
+- On affiche les détails de la destination
+
+- Bouton réserver (non fonctionnel)
+
+Contraintes : 
+
+- Images a chercher sur google images par destination
+
+- CSS obligatoire via un seul fichier css (pas de style inline)

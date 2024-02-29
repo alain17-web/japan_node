@@ -1,0 +1,20 @@
+<%- include('header.ejs') %>
+    <h1 class="destinationsTitle">Our destinations</h1>
+    <div class="destContainer">
+        <% destinationsData.forEach(destination=> { %>
+            <div class="destCard">
+                <img src="" alt="">
+                <div class="cardContainer">
+
+                    <h4>
+                        <%= destination.location %>
+                    </h4>
+                    <p>
+                        <%= destination.description %>
+                    </p>
+                </div>
+            </div>
+            <% }) %>
+
+    </div>
+    <%- include('footer.ejs') %>

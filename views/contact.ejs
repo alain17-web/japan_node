@@ -1,0 +1,32 @@
+<%- include('header.ejs') %>
+    <h1 class="contactsTitle">Contact us</h1>
+    <section class="formContainer">
+        <form method="POST" id="form">
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" placeholder="John">
+
+            <label for="lasttName">Last name</label>
+            <input type="text" name="lasttName" placeholder="Doe">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="jdoe@gmail.com">
+
+            <label for="message">Your message</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+
+            <button class="btn" type="submit" >Send</button>
+            
+        </form>
+        
+            <h3 id="successMsg"  class="success" style="display: none;">Your message has been sent</h3>
+       
+    </section>
+    <%- include('footer.ejs') %>
+
+    <script>
+        const form = document.getElementById('form')
+        btn.addEventListener('submit', (e) => {
+            e.preventDefault()
+            document.getElementById('successMsg').style.display="block"
+        })
+    </script>
