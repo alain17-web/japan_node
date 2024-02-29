@@ -1,8 +1,31 @@
 <%- include('header.ejs') %>
 
-<div class="container">
-    <h1 class="singleDestinationTitle"><%= singleDestinationData.name %></h1>
-    <!-- Other content of the single destination -->
-</div>
+    <main class="container">
+        <section class="photo">
+            <h1 class="singleTitle">
+                <%= singleDestinationData.name %>
+            </h1>
+            <img src="/img/<%= singleDestinationData.image %>" alt="">
+        </section>
+        <section class="textInfo">
+             <h3>
+                <%= singleDestinationData.name %> - <%= singleDestinationData.location %>
+                        </h3>
+                        <article class="desc">
+                            <p>
+                                <%= singleDestinationData.description %>
+                            </p>
+                        </article>
+                        <article class="practical">
+                            <p>
+                               It takes <%= singleDestinationData.duration %> to visit
+                            </p>
+                            <p>
+                               <strong>price:</strong> <%= singleDestinationData.price %> €
+                            </p>
+                        </article>
 
-<%- include('footer.ejs') %>
+        </section>
+    </main>
+
+    <%- include('footer.ejs') %>

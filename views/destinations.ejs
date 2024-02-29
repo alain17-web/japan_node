@@ -1,27 +1,28 @@
 <%- include('header.ejs') %>
-    <h1 class="destinationsTitle">Our destinations</h1>
-    <div class="destContainer">
-        <% destinationsData.forEach(destination=> { %>
-            
-                <div class="destCard">
-                    <%= destination.id %>
-                    <img src="<%= destination.image %>" alt="">
 
-                    <div class="cardContainer">
+    <h1 class="destinationsTitle">Our destinations</h1>
+    <main class="destContainer">
+        <% destinationsData.forEach(destination=> { %>
+
+            <section class="destCard">
+                <a href="/singleDestination?id=<%= destination.id %>">
+                    <img src="/img/<%= destination.image %>" alt="" width="100%" height="60%">
+
+                    <article class="cardContainer">
 
                         <h4>
-                            <%= destination.location %>
+                            <%= destination.name %>
                         </h4>
                         <p>
-                            <%= destination.description %>
+                            <%= destination.shortDescription %>
                         </p>
-                        <a href="/singleDestination?id=<%= destination.id %>">
-                            <%= destination.name %> - <%= destination.id %>
-                        </a>
-                    </div>
-                </div>
-            
-            <% }) %>
 
-    </div>
+                    </article>
+                </a>
+            </section>
+
+
+            <% }) %>
+    </main>
+
     <%- include('footer.ejs') %>
