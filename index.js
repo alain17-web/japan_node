@@ -99,7 +99,7 @@ const server = http.createServer((req, res) => {
                     const destinationsDataSingle = JSON.parse(data)
                     const singleDestinationData = destinationsDataSingle.find(destination => destination.id === destinationId)
 
-                    ejs.renderFile('views/singleDestination.ejs', { singleDestinationData: singleDestinationData }, {}, {}, (err, str) => {
+                    ejs.renderFile('views/singleDestination.ejs', { singleDestinationData }, {}, {}, (err, str) => {
                         if (err) {
                             console.log(err)
                         }
