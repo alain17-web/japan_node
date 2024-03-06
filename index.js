@@ -52,30 +52,7 @@ const server = http.createServer((req, res) => {
     }
 
     let jsonFilePath
-    // let activePage
-    //ACTIVE 
-    // switch (pathname) {
-    //     case '/':
-    //         activePage = 'home';
-    //         break;
-    //     case '/destinations':
-    //         activePage = 'destinations';
-    //         break;
-    //     case '/contacts':
-    //         activePage = 'contacts';
-    //         break;
-    //     case '/login':
-    //         activePage = 'login';
-    //         break;
-    //     default:
-    //         return
-    // }
-
-    // ejs.renderFile('views/header.ejs', { activePage: activePage }, {}, (err, headerStr) => {
-    //     if (err) {
-    //         console.log(err);
-    //     }
-
+    
         //ROUTES
 
         switch (pathname) {
